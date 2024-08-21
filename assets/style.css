@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kollektif;
+  src: url(fonts/Kollektif.ttf);
+}
+
+/* Universal Settings */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Poppins;
+  text-align: center;
+  color: #cb6f0f;
+  font-size: 18px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flowers {
+  z-index: 1;
+  
+  width: 100%;
+}
+
+.icon-image {
+  width: 75px;
+  
+  z-index: 3;
+}
+
+/* Especial Settings */
+
+body {
+  width: 100%;
+  height: fit-content;
+  
+  flex-direction: column;
+}
+
+#background-image {
+  z-index: -2;
+  
+  width: 100%;
+  
+  position: absolute;
+  top: 0%;
+  right: 0;
+  
+  size: cover;
+}
+
+#top-flower {
+  position: absolute;
+  top: -5%;
+}
+
+#bottom-flower {
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+}
+
+header {
+  width: 100%;
+  padding: 45px;
+}
+
+#texto-de-convite {
+  width: 75%;
+}
+
+img#header-image {
+  width: 150px;
+  padding-bottom: 30px;
+}
+
+img#main-image {
+  width: 90%;
+  
+  padding-top: -50px;
+}
+
+main {
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  
+  padding-top: -100px;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+#icons {
+  width: 100%;
+  height: 100%;
+  
+  z-index: 2;
+}
+
+.icon-container {
+  width: 75px;
+  margin: 8px;
+  flex-direction: column;
+}
+
+.icon-text {
+  font-family: Kollektif;
+  color: #cb6f0f;
+}
+
+
+/* Responsividade */
