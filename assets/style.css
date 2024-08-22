@@ -78,11 +78,12 @@ body {
 
 header {
   width: 100%;
-  padding: 45px;
+  padding-top: 100px;
+  padding-bottom: 0px;
 }
 
 #texto-de-convite {
-  width: 75%;
+  width: 100%;
 }
 
 img#header-image {
@@ -94,18 +95,22 @@ img#main-image {
   width: 90%;
   
   padding-top: -50px;
+  
+  margin: 40px 0 40px 0;
 }
 
 main {
   flex-direction: column;
+  padding: 50px;
+  padding-bottom: 25px;
 }
 
 footer {
   width: 100%;
   
-  padding-top: -100px;
+  padding: 50px;
+  padding-top: 0px;
   flex-direction: column;
-  padding-bottom: 30px;
 }
 
 #icons {
@@ -113,17 +118,19 @@ footer {
   height: 100%;
   
   z-index: 2;
+  
+  justify-content: space-around;
 }
 
 .icon-container {
   width: 75px;
-  margin: 8px;
   flex-direction: column;
 }
 
 .icon-text {
   font-family: Kollektif;
   color: #cb6f0f;
+  margin-bottom: 5px;
 }
 
 
