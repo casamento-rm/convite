@@ -1,28 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
   <title>Convite de Casamento • R&M</title>
-  <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    @font-face {
+      font-family: Poppins;
+      src: url('assets/fonts/Poppins-Regular.ttf');
+    }
+
+    @font-face {
+      font-family: Kollektif;
+      src: url('assets/fonts/Kollektif.ttf');
+    }
+
+    @font-face {
+      font-family: Raleway;
+      src: url('assets/fonts/Raleway-Regular.ttf');
+    }
+
+    /* Universal Settings */
+    * {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    p {
+      font-family: Raleway;
+      text-align: center;
+      color: #cb6f0f;
+      font-size: 20px;
+    }
+
+    h1 {
+      font-family: Kollektif;
+      text-align: center;
+      color: #cb6f0f;
+      font-size: 30px;
+      margin: 30px;
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .flowers {
+      z-index: 1;
+      width: 100%;
+    }
+
+    .icon-image {
+      width: 75px;
+      z-index: 3;
+    }
+
+    .icon-container {
+      width: 75px;
+      flex-direction: column;
+    }
+
+    .icon-text {
+      font-family: Kollektif;
+      color: #cb6f0f;
+      margin-bottom: 5px;
+    }
+
+    /* Especial Settings */
+    body {
+      width: 100%;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    #background-image {
+      z-index: -2;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    #top-flower {
+      position: absolute;
+      top: -5%;
+    }
+  
+
+
+    #bottom-flower {
+      position: relative;
+      bottom: 0;
+      left: -5%;
+    }
+
+    header {
+      width: 100%;
+      padding-top: 100px;
+    }
+  
+  #verse {
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+  }
+
+    #texto-de-convite {
+      width: 100%;
+      
+      margin-top: 50px;
+      margin-bottom: -260px;
+    }
+
+    img#header-image {
+      width: 150px;
+      padding-bottom: 50px;
+    }
+
+    img#main-image {
+      width: 80%;
+      margin: 50px 0;
+    }
+
+    main {
+      flex-direction: column;
+      padding: 50px;
+      padding-bottom: 25px;
+    }
+
+    footer {
+      width: 100%;
+      padding: 50px;
+      padding-top: 0;
+      flex-direction: column;
+    }
+
+    #icons {
+      width: 100%;
+      height: 100%;
+      
+      margin: 50px;
+      z-index: 2;
+      justify-content: space-around;
+    }
+  </style>
 </head>
 
 <body class="center">
   <img id="background-image" src="assets/img/background-image.jpg" alt="">
-  <img class="flowers" src="assets/img/top-flower.jpg" alt="" id="top-flower">
 
   <header class="center">
-    <img id="header-image" srcset="" src="assets/img/estamos-casando.png" alt="">
+    <img id="header-image" src="assets/img/estamos-casando.png" alt="">
   </header>
-  <main class="center">
-    <p id="texto-de-convite">Você está convidado para o nosso casamento! Se organize e venha para essa festa incrível.</p>
 
+  <main class="center">
+    <p id="verse">"Olho nenhum viu, ouvido nenhum ouviu, mente nenhuma imaginou o que Deus preparou para aqueles que o amam" <br><br><strong>1 Coríntios 2:9</strong></p>
     <img id="main-image" src="assets/img/rm.png" alt="">
   </main>
-  <footer class="center">
 
+  <footer class="center">
     <div class="center" id="icons">
       <div class="icon-container center">
         <h6 class="icon-text center">Confirme sua presença</h6>
@@ -36,11 +179,16 @@
         <h6 class="icon-text center">Lista de presentes</h6>
         <a class="icon-image" href="presente.html"><img src="assets/img/c.png" alt="" class="icon-image"></a>
       </div>
-      <img class="flowers" id="bottom-flower" src="assets/img/bottom-flower.jpg" alt="">
     </div>
+    
+        <p id="texto-de-convite">Venha fazer parte do nosso lindo momento em que diremos "sim" diante de Deus e de todas as pessoas especiais que estarão no nosso casamento inclusive você.</p>
 
+
+    <img class="flowers" src="assets/img/top-flower.jpg" alt="" id="top-flower">
   </footer>
 
+  <img class="flowers" id="bottom-flower" src="assets/img/bottom-flower.jpg" alt="">
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
