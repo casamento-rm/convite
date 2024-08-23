@@ -30,6 +30,14 @@ p {
   font-size: 20px;
 }
 
+h1 {
+  font-family: Kollektif;
+  text-align: center;
+  color: #cb6f0f;
+  font-size: 30px;
+  margin: 30px;
+}
+
 .center {
     display: flex;
     align-items: center;
@@ -49,6 +57,17 @@ p {
   z-index: 3;
 }
 
+.icon-container {
+  width: 75px;
+  flex-direction: column;
+}
+
+.icon-text {
+  font-family: Kollektif;
+  color: #cb6f0f;
+  margin-bottom: 5px;
+}
+
 /* Especial Settings */
 
 body {
@@ -58,16 +77,33 @@ body {
   flex-direction: column;
 }
 
+body#alt {
+  width: 100%;
+  height: 100vh;
+  height: fit-content;
+
+  flex-direction: column;
+}
+
 #background-image {
+  z-index: -2;
+
+  width: 100%;
+
+  position: absolute;
+  top: 0%;
+  right: 0;
+}
+
+#background-image-presente {
   z-index: -2;
   
   width: 100%;
+  height: 100vh;
   
   position: absolute;
   top: 0%;
   right: 0;
-  
-  size: cover;
 }
 
 #top-flower {
@@ -78,6 +114,12 @@ body {
 #bottom-flower {
   position: absolute;
   bottom: -25%;
+  left: 0;
+}
+
+#bottom-flower-presente {
+  position: absolute;
+  bottom: 0;
   left: 0;
 }
 
@@ -127,16 +169,5 @@ footer {
   justify-content: space-around;
 }
 
-.icon-container {
-  width: 75px;
-  flex-direction: column;
-}
 
-.icon-text {
-  font-family: Kollektif;
-  color: #cb6f0f;
-  margin-bottom: 5px;
-}
-
-
-/* Responsividade */
+/* Responsividade */q
