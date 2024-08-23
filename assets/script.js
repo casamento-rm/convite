@@ -10,7 +10,7 @@ function atualizarSaudacao() {
     const saudacaoElemento = document.getElementById('texto-de-convite');
 
     if (nome) {
-        saudacaoElemento.innerHTML = `Convidamos você <strong>${nome}</strong> fazer parte do nosso <strong>lindo momento</strong> em que diremos <strong>"sim"</strong> diante de <strong>Deus</strong> e de todas as <strong>pessoas especiais</strong> que estarão no nosso <strong>casamento</strong>.`
+        saudacaoElemento.innerHTML = `Convidamos você <strong>${nome}</strong> para fazer parte do nosso <strong>lindo momento</strong> em que diremos <strong>"sim"</strong> diante de <strong>Deus</strong> e de todas as <strong>pessoas especiais</strong> que estarão no nosso <strong>casamento</strong>.`
     } else {
         saudacaoElemento.innerHTML = `Venha fazer parte do nosso <strong>lindo momento</strong> em que diremos <strong>"sim"</strong> diante de <strong>Deus</strong> e de todas as <strong>pessoas especiais</strong> que estarão no nosso <strong>casamento</strong>.`
     }
